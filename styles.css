@@ -1,0 +1,51 @@
+
+
+:root {
+    --navbar-padding-right: 20px; /* Valor inicial del padding-right de .navbar-nav */
+}
+
+
+*{
+    border: 1px solid red;
+}
+
+
+
+#top-header a {
+    width: auto;
+}
+
+.navbar-img-anchor-container{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar-flex-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+/*controla los anchors de "home","features",Etc)*/
+.navbar-expand-lg .navbar-collapse{
+    flex-direction: row-reverse;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    padding-right: var(--navbar-padding-right);
+}
+
+/*el container de top header*/
+#top-header {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-right: calc(var(--navbar-padding-right) + 10px);
+    background-color: rgba(110,163,201,255);
+}
+
+
