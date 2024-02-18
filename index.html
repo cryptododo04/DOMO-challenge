@@ -8,13 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <link rel="stylesheet" href="./styles.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <title>Document</title>
 
 
+    <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
@@ -24,17 +24,25 @@
         <!--HEADER MAIN CONTAINER-->
 
             <div id="top-header" class="container-fluid">
-                <a href="#">test</a>
-                <a href="#">test</a>
-                <a href="#">test</a>
+                    <div class="header-anchor-container">
+                    <a href="#"></a>
+                </div>
+                <div class="header-anchor-container">
+                    <a href="#"></a>
+                </div>
+                <div class="header-anchor-container">
+                    <a href="#"></a>
+                </div>
             </div>
 
             <!----HEADER NAVIGATION BAR---->
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
+        <div id="nav-container">
+            <nav class="navbar  navbar-expand-lg bg-body-tertiary bg-warning">
+                <div class="container-fluid navbarContainer">
                     <div id="navbar-img-anchor-container">  
-                        <div class="navbar-flex-container">
-                            <img src="./images/star.png" alt="black star">
+                        <svg width="42px" height="42px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path fill="#333" d="M12.9 15.4l-4.9-2.6-4.9 2.6 0.9-5.4-4-3.9 5.5-0.8 2.4-5 2.4 5 5.5 0.8-3.8 3.9 0.9 5.4z"></path>
+                            </svg>
                             <a class="navbar-brand" href="#">Navbar</a>
                         </div>
                     </div>
@@ -44,34 +52,207 @@
                   <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" style="color: rgba(211,221,231,255);" aria-current="page" href="#">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" style="color: rgba(211,221,231,255);" href="#">Test</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" style="color: rgba(211,221,231,255);" href="#">Test</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        <a class="nav-link" style="color: rgba(211,221,231,255);" href="#">Test</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" style="color: rgba(211,221,231,255);" href="#">Test</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" style="color: rgba(211,221,231,255);" href="#">Test</a>
                       </li>
                     </ul>
                   </div>
                 </div>
               </nav>
+            </div>
     </header>
 
-    <section id="section1">
+    <!---
+    <section id="section1" class="main-hero">
+
+
+        <div class="main-title-container">
+            <h2>Main Hero Content</h2>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown button
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item active" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </div>
+            
+        -->
+            
+    <div id="principal" class="position-relative">
+
+        <img src="./images/reflexion.jpg" class="img-fluid" style="max-height: 73vh; width: 100vw;" alt="telescope mirrors">
+  
+        <div id="texto-imagen" class="position-absolute">
+  
+          <h2>Cada dia mejor</h2>
+          
+          <div class="separator"></div>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+          <button class="btn btn-primary rounded-pill btn-block btn-nav">Comenzar</button>
+  
+        </div>
+  
+    </div>
+
+            
+        </div>
+
+          <div id="main-internal-links-container">
+            <div id="internal-link1" class="internal-link">
+                <h4>INTERNAL LINK 1</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                </p>
+                <a class="flecha" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="gray" class="bi bi-arrow-right-square" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm4.5 5.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                  </svg>
+                </a>
+            </div>
+            <div id="internal-link2" class="internal-link">
+                <h4>INTERNAL LINK 2</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                </p>
+                <a class="flecha" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="gray" class="bi bi-arrow-right-square" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm4.5 5.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                  </svg>
+                </a>
+            </div>
+            <div id="internal-link3" class="internal-link">
+                <h4>INTERNAL LINK 3</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                </p>
+                <a class="flecha" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="gray" class="bi bi-arrow-right-square" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm4.5 5.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                  </svg>
+                </a>
+            </div>
+            <div id="internal-link4" class="internal-link">
+                <h4>INTERNAL LINK 4</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                </p>
+                <a class="flecha" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="gray" class="bi bi-arrow-right-square" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm4.5 5.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                  </svg>
+                </a>
+            </div>
+
+          </div>
 
     </section>
 
-    <section id="section2">
+    <section id="section2" class="section-and-hero">
+        
+
+        <div class="section">
+            
+            <div class="section-text">
+                <h2>Main Service 1 Offering</h2>
+                <div class="separator"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown button
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item active" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <img src="./images/nasa.jpg" alt="nasa earth picture">
+            </div>
+    </div>
 
     </section>
 
-    <section id="section3">
+    <section id="section3" class="section-and-hero">
+        
+
+        <div class="section">
+            
+            <div class="section-text">
+                <h2>Main Service 1 Offering</h2>
+                <div class="separator"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown button
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item active" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <img src="./images/cohete.jpg" alt="nasa earth picture">
+            </div>
+    </div>
 
     </section>
+
+    <section id="section4" class="section-and-hero">
+        
+
+        <div class="section">
+            
+            <div class="section-text">
+                <h2>Main Service 1 Offering</h2>
+                <div class="separator"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown button
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item active" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="">
+                <img src="./images/mirrors2.jpg" alt="nasa earth picture">
+            </div>
+    </div>
+
+    </section>
+
 
     <footer id="footer">
 

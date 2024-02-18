@@ -1,7 +1,7 @@
 
 
 :root {
-    --navbar-padding-right: 20px; /* Valor inicial del padding-right de .navbar-nav */
+    --navbar-padding-right: 50px; /* Valor inicial del padding-right de .navbar-nav */
 }
 
 
@@ -9,24 +9,76 @@
     border: 1px solid red;
 }
 
-
-
-#top-header a {
-    width: auto;
+#top-header {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-right: calc(var(--navbar-padding-right) + 15px);
+    background-color: rgba(110,163,201,255);
+    height: 30px;
 }
 
-.navbar-img-anchor-container{
-    padding: 20px;
+.header-anchor-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
 }
+
+#top-header a {
+    width: 70px;
+    height: 18px;
+    background-color: rgba(211,221,231,255);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.nav-container{
+    height: 80px;
+}
+
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: rgba(248,247,245,255) !important;
+}
+
+.navbar{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+.navbar-brand {
+    padding-top: var(--bs-navbar-brand-padding-y);
+    padding-bottom: var(--bs-navbar-brand-padding-y);
+    margin-right: var(--bs-navbar-brand-margin-end);
+    /* font-size: var(--bs-navbar-brand-font-size); */
+    color: var(--bs-navbar-brand-color);
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: #333;
+    width: 100px;
+    border-radius: 3px;
+    color:#333;
+}
+
+#navbar-img-anchor-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding-left: 30px;
+}
+
+
 
 .navbar-flex-container {
     display: flex;
     align-items: center;
-    gap: 10px; 
+    gap: 10px;
+    padding-left: 30px;
 }
 
 /*controla los anchors de "home","features",Etc)*/
@@ -37,15 +89,174 @@
 .navbar-nav {
     margin-left: auto;
     padding-right: var(--navbar-padding-right);
-}
-
-/*el container de top header*/
-#top-header {
     display: flex;
-    justify-content: flex-end;
-    gap: 20px;
-    padding-right: calc(var(--navbar-padding-right) + 10px);
-    background-color: rgba(110,163,201,255);
+    gap: 18px;
+}
+
+.nav-item{
+
+    width: 100px;
+    text-align:center ;
+    background-color: rgba(211,221,231,255);
+    border-radius: 3px;
+    
+}
+
+.nav-link {
+    padding: 0px;
+    
+/*el container de top header*/
 }
 
 
+
+#main-internal-links-container {
+    display: flex;
+    justify-content: space-between; /* Para separar los elementos con espacio entre ellos */
+}
+
+#main-internal-links-container > div {
+    width: 25%; 
+    padding: 10px; 
+    text-align: center;
+}
+
+
+
+header{
+    height: 25vh;
+    background-color: rgba(248,247,245,255);
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    
+}
+
+.nav-container{
+    justify-self: center;
+    align-self: ce;
+}
+
+.main-hero{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-title-container{
+    padding: 80px 0px 135px 65px;
+    background-color: rgba(222,232,241,255);
+}
+
+.main-title-container h2{
+color:rgba(37, 73, 117, 0.76);
+}
+
+.main-title-container p {
+    display: flex;
+    justify-content: flex-start;
+    width: 600px;
+    font-size: 20px;
+}
+
+.img-fluid {
+    object-fit: cover;
+  } 
+
+  #texto-imagen {
+    top: 20%;
+    left: 10%;
+    transform: translate(0, 0); /* Reset any previous translation */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+  }
+
+#main-internal-links-container h4{
+    color: white;
+    font-size: 18px;
+}
+
+#main-internal-links-container p{
+    font-size: 15px;
+    line-height: 20px;
+    text-align: start;
+    max-width: 200px;
+    height: 80px;
+}
+
+.internal-link{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 0px;
+}
+#internal-link1{
+    background-color: rgba(12, 36, 66, 0.863);
+    
+}
+
+#internal-link2{
+    background-color: rgb(57, 105, 167);
+}
+
+#internal-link3{
+    background-color: rgb(137, 171, 212);
+}
+
+#internal-link4{
+    background-color: rgb(71, 124, 194);
+}
+
+
+
+.flecha{
+    justify-self: flex-end;
+    align-self: flex-end;
+}
+
+
+.section{
+    padding: 80px 0px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.section img{
+    height: 200px;
+}
+
+.section-text{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    justify-content: center;
+    max-width: 600px;
+}
+
+.section-and-hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.section-and-hero h2 {
+    position: absolute;
+    top: 20px; /* Ajusta la posición vertical según necesites */
+    left: 15%; /* Ajusta la posición horizontal según necesites */
+    z-index: 1; /* Asegura que esté por encima de otros elementos */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
+.separator {
+    width: 20%;
+    height: 8px;
+    background-color: grey;
+    margin-top: 10px; /* Espacio entre el rectángulo y el título */
+    margin-bottom: 10px; /* Espacio entre el rectángulo y el párrafo */
+}
