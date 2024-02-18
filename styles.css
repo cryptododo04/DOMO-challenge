@@ -112,7 +112,7 @@
 
 #main-internal-links-container {
     display: flex;
-    justify-content: space-between; /* Para separar los elementos con espacio entre ellos */
+    flex-wrap: wrap;
 }
 
 #main-internal-links-container > div {
@@ -259,4 +259,51 @@ color:rgba(37, 73, 117, 0.76);
     background-color: grey;
     margin-top: 10px; /* Espacio entre el rectángulo y el título */
     margin-bottom: 10px; /* Espacio entre el rectángulo y el párrafo */
+}
+
+
+
+
+
+
+
+
+
+/*-----------------MEDIA QUERY RESOLUCION TABLETS-------------------*/
+@media (max-width: 991px) {
+
+    #top-header {
+        display: none;
+    }
+
+    .section-and-hero h2 {
+        position:initial;
+        top: 20px; /* Ajusta la posición vertical según necesites */
+        left: 15%; /* Ajusta la posición horizontal según necesites */
+        z-index: 1; /* Asegura que esté por encima de otros elementos */
+        background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+
+    .section{
+        margin-top: 50px;
+        padding: 0px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    #main-internal-links-container > div {
+        width: 50%; 
+        padding: 10px; 
+        text-align: center;
+    }
+}
+
+
+/*-----------------MEDIA QUERY RESOLUCION TABLETS-------------------*/
+@media (max-width: 480px) {
+    
 }
